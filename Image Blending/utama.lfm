@@ -1,0 +1,86 @@
+object FormUtama: TFormUtama
+  Left = 829
+  Height = 384
+  Top = 125
+  Width = 572
+  Caption = 'Blending'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '2.0.12.0'
+  object ButtonLoadImage1: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Image 1'
+    OnClick = ButtonLoadImage1Click
+    TabOrder = 0
+  end
+  object ButtonSave: TButton
+    Left = 272
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Save'
+    OnClick = ButtonSaveClick
+    TabOrder = 1
+  end
+  object ImageOriginal1: TImage
+    Left = 16
+    Height = 240
+    Top = 80
+    Width = 218
+    AutoSize = True
+  end
+  object ButtonClose: TButton
+    Left = 360
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Close'
+    OnClick = ButtonCloseClick
+    TabOrder = 2
+  end
+  object ImageBlending: TImage
+    Left = 592
+    Height = 234
+    Top = 80
+    Width = 208
+    AutoSize = True
+  end
+  object ImageOriginal2: TImage
+    Left = 264
+    Height = 234
+    Top = 80
+    Width = 224
+    AutoSize = True
+  end
+  object ButtonLoadImage2: TButton
+    Left = 96
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Image 2'
+    OnClick = ButtonLoadImage2Click
+    TabOrder = 3
+  end
+  object ButtonBlending: TButton
+    Left = 184
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Blending'
+    OnClick = ButtonBlendingClick
+    TabOrder = 4
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 728
+    Top = 8
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    FileName = 'C:\Data\UBM\2021-2022 ganjil\training lazarus 5PTI51\contoh.ico'
+    InitialDir = 'C:\Data\UBM\2021-2022 ganjil\training lazarus 5PTI51\'
+    Left = 616
+    Top = 8
+  end
+end
