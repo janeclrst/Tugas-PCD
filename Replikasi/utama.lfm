@@ -1,0 +1,129 @@
+object FormUtama: TFormUtama
+  Left = 471
+  Height = 502
+  Top = 174
+  Width = 718
+  Caption = 'Replikasi'
+  ClientHeight = 502
+  ClientWidth = 718
+  LCLVersion = '2.0.12.0'
+  object ButtonLoad: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Load'
+    OnClick = ButtonLoadClick
+    TabOrder = 0
+  end
+  object ButtonReplikasi: TButton
+    Left = 184
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Replikasi'
+    OnClick = ButtonReplikasiClick
+    TabOrder = 1
+  end
+  object ButtonSave: TButton
+    Left = 96
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Save'
+    OnClick = ButtonSaveClick
+    TabOrder = 2
+  end
+  object PanelImage: TPanel
+    Left = 8
+    Height = 379
+    Top = 80
+    Width = 701
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderWidth = 10
+    BorderStyle = bsSingle
+    Caption = 'PanelImage'
+    ClientHeight = 375
+    ClientWidth = 697
+    TabOrder = 3
+    object ScrollBox1: TScrollBox
+      Left = 11
+      Height = 353
+      Top = 11
+      Width = 283
+      HorzScrollBar.Page = 98
+      VertScrollBar.Page = 98
+      Align = alLeft
+      ClientHeight = 349
+      ClientWidth = 279
+      TabOrder = 0
+      object ImageOriginal: TImage
+        Left = 8
+        Height = 90
+        Top = 8
+        Width = 90
+        AutoSize = True
+      end
+    end
+    object Splitter1: TSplitter
+      Left = 294
+      Height = 353
+      Top = 11
+      Width = 10
+    end
+    object ScrollBox2: TScrollBox
+      Left = 304
+      Height = 353
+      Top = 11
+      Width = 382
+      HorzScrollBar.Page = 361
+      VertScrollBar.Page = 332
+      Align = alClient
+      ClientHeight = 332
+      ClientWidth = 361
+      TabOrder = 2
+      object ImageReplikasi: TImage
+        Left = 8
+        Height = 1000
+        Top = 8
+        Width = 1000
+      end
+    end
+  end
+  object TrackBarSkala: TTrackBar
+    Left = 16
+    Height = 25
+    Top = 48
+    Width = 296
+    Max = 50
+    Min = 1
+    OnChange = TrackBarSkalaChange
+    Position = 1
+    TabOrder = 4
+  end
+  object LabelSkala: TLabel
+    Left = 320
+    Height = 15
+    Top = 48
+    Width = 27
+    Caption = '0.000'
+    ParentColor = False
+  end
+  object ButtonClose: TButton
+    Left = 280
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Close'
+    OnClick = ButtonCloseClick
+    TabOrder = 5
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 528
+    Top = 8
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 632
+    Top = 8
+  end
+end
